@@ -1,0 +1,304 @@
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    height: 20px;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #ff6347; 
+}
+
+section  {
+    height: 90vh;
+    padding: 70px 20px 20px; 
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+
+hr{
+  width: 90%;
+  height: 1px;
+  border: 2px solid;
+
+}
+
+#home {
+    background-color: #ffffff;
+}
+
+#menu {
+    background-color: #ffffff;
+}
+
+.menupic{
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 1450px;
+  height: 700px;
+}
+
+#reservation {
+    background-color: #ffffff;
+    
+}
+
+.carousel {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+
+}
+.carousel-inner {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+
+}
+.carousel-item {
+  width: 100%;
+  flex: 0 0 100%;
+
+}
+.carousel-item img {
+  width: 1000px;
+  height: 610px;
+  object-fit: fill;
+  display: block;
+
+}
+input[name="carousel"] {
+  display: none;
+}
+
+#carousel1:checked ~ .carousel-inner {
+  transform: translateX(0%);
+}
+#carousel2:checked ~ .carousel-inner {
+  transform: translateX(-100%);
+}
+#carousel3:checked ~ .carousel-inner {
+  transform: translateX(-200%);
+}
+#carousel4:checked ~ .carousel-inner {
+  transform: translateX(-300%);
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 10px;
+}
+.carousel-nav label {
+  width: 15px;
+  height: 15px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.carousel-nav label:hover, input[name="carousel"]:checked + label {
+  background: #555;
+}
+
+.carousel input {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.carousel-nav label {
+  position: relative;
+  z-index: 10;
+}
+.carousel1 {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  border-radius: 30px;
+
+}
+.carousel-inner1 {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+
+}
+.carousel-item1 {
+  width: 100%;
+  flex: 0 0 100%;
+}
+.carousel-item1 img {
+  width: 1000px;
+  height: 620px;
+  object-fit: cover;
+  display: block;
+  top: auto;
+  object-fit: fill;
+}
+input[name="carousel1"] {
+  display: none;
+}
+
+#carousel5:checked ~ .carousel-inner1 {
+  transform: translateX(-0%);
+}
+#carousel6:checked ~ .carousel-inner1  {
+  transform: translateX(-100%);
+}
+
+.carousel-nav1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.carousel-nav1 label {
+  width: 15px;
+  height: 15px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.carousel-nav1 label:hover, input[name="carousel1"]:checked + label {
+  background: #555;
+}
+
+.carousel1 input {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.carousel-nav1 label {
+  position: relative;
+  z-index: 10;
+}
+
+.h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 750px;
+  align-items: center;
+  
+}
+
+.form-group {
+  margin: 20px;
+  display: flex;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.name-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-fields input {
+  width: calc(50% - 5px);
+}
+
+button {
+  background-color: #6750A4; 
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4A3780; 
+}
+.container label{
+  padding: 8px;
+}
+#reserve{
+  padding-left: 380px;
+}
+
+#baba{
+  background-color: #333; 
+  color: white; 
+  padding: 20px;
+  text-align: center; 
+}
+#baba p{
+  margin: 0;
+}
+#baba h2{
+  margin: 0;
+}
